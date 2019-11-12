@@ -1,0 +1,15 @@
+version: '3.2'
+services:
+  hyperf-skeleton:
+    build: ../
+    container_name: hyperf-skeleton
+    privileged: true
+    ports:
+      - "9888:9501"
+      - "9889:9502"
+      - "9890:9503"
+      - "9891:9504"
+      - "9892:9505"
+    volumes:
+      - ../app/skeleton:/hyperf-skeleton:rw
+    tty: true
