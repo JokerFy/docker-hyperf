@@ -11,5 +11,5 @@ services:
       - "9891:9504"
       - "9892:9505"
     volumes:
-      - ../app/skeleton:/hyperf-skeleton:rw
+      - ../app:/data:rw
     tty: true
